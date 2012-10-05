@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="登录" android:singleLine="true" style="@style/back" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/top_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="忘记密码" android:singleLine="true" android:shadowColor="#77000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" style="@style/title" />
+    </FrameLayout>
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttom" android:layout_below="@id/top">
+        <EditText android:textSize="13.759979sp" android:textColor="#ff4b4b4b" android:id="@id/forgetEdit" android:background="@anim/shape_rounded_rectangle_edt" android:paddingLeft="5.0dip" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="35.0dip" android:hint="请输入您的手机号" android:singleLine="true" android:maxLength="30" android:layout_centerHorizontal="true" android:inputType="phone" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff4b4b4b" android:gravity="center" android:id="@id/getBackPassword" android:background="@anim/shape_rounded_rectangle_press" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:text="找回密码" android:layout_below="@id/forgetEdit" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

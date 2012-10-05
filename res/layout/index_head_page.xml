@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <FrameLayout android:id="@id/index_head" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <TextView android:gravity="center" android:layout_gravity="right|center" android:id="@id/login_user" android:background="@anim/back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="登录" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="right|center" android:id="@id/index_unlogin" android:background="@anim/back_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="注销" style="@style/back" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/showTitle" android:background="@drawable/index_head_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/index_changeActivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" style="@style/back" />
+    </FrameLayout>
+    <com.moonbasa.tools.Try4 android:id="@id/index_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttom" android:layout_below="@id/index_head" android:layout_centerHorizontal="true" />
+</RelativeLayout>

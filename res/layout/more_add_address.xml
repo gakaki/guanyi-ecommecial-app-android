@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <FrameLayout android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/back" android:background="@anim/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="地址管理" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新增地址" style="@style/title" />
+        <TextView android:gravity="center" android:layout_gravity="right|center" android:id="@id/save" android:background="@anim/index_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="保存地址" style="@style/enter" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/center" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/top" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@anim/shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/center">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/userName" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收  货  人： " />
+            <EditText android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/consignee_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/userName" android:layout_alignParentRight="true" android:imeOptions="actionNext" />
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/area_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/addressName" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="所在地区： " />
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/addressName">
+                <EditText android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/area_edit" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="none" android:imeOptions="actionNext" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/addressDetails" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细地址： " />
+            <EditText android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/addr_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/addressDetails" android:inputType="text" android:imeOptions="actionNext" />
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/post_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/postCodeName" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮        编： " />
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/postCodeName">
+                <EditText android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/postcode_edit" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:imeOptions="actionNext" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/moblievalue" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码： " />
+            <EditText android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/phone_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="11" android:layout_toRightOf="@id/moblievalue" android:inputType="phone" android:imeOptions="actionNext" />
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/guding_phone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/telPhoneValue" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="固定电话：" />
+            <EditText android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/tel_edit" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:singleLine="true" android:maxLength="16" android:layout_toRightOf="@id/telPhoneValue" android:inputType="phone" android:imeOptions="actionDone" />
+        </RelativeLayout>
+        <LinearLayout android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:id="@id/isdefault" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff4b4b4b" android:id="@id/isDefaultText" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置成默认地址:" />
+            <CheckBox android:layout_gravity="right|center" android:id="@id/isDefaultcheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/delete_address" android:background="@anim/more_address_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="删除地址" android:layout_below="@id/content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pca_sellayout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.moonbasa.tools.MoreAddressView android:id="@id/province" android:layout_width="90.0dip" android:layout_height="wrap_content" />
+        <com.moonbasa.tools.MoreAddressView android:id="@id/city" android:layout_width="90.0dip" android:layout_height="wrap_content" />
+        <com.moonbasa.tools.MoreAddressView android:id="@id/area" android:layout_width="90.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/post_sellayout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.moonbasa.tools.MoreAddressView android:id="@id/scoll_post" android:layout_width="120.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

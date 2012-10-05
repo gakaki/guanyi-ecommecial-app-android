@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout1" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/register_button_more" android:background="@anim/back" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="返回" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="与微博账号绑定" style="@style/title" />
+        <TextView android:gravity="center" android:layout_gravity="right|center" android:id="@id/register_button_confirm" android:background="@anim/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="确认" style="@style/enter" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout1">
+        <TextView android:layout_gravity="center" android:id="@id/weibo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ScrollView android:id="@id/weibo_register_scoll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout2">
+        <LinearLayout android:orientation="vertical" android:id="@id/Layout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/layout2" android:layout_centerHorizontal="true">
+            <RadioButton android:textSize="13.599976sp" android:textColor="@color/deeppink" android:id="@id/enable_sina_login_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="若您已注册过梦芭莎，请绑定新浪微博和梦芭莎账户" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/reg_userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="登录账号:" android:layout_centerVertical="true" />
+                    <EditText android:textSize="13.759979sp" android:textColor="#ff4b4b4b" android:id="@id/reg_userNameValue" android:background="@drawable/login_useredit" android:paddingLeft="5.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="250.0dip" android:hint="输入Email地址或手机号" android:singleLine="true" android:layout_toRightOf="@id/reg_userName" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/password1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="密        码:" android:layout_centerVertical="true" />
+                    <EditText android:textSize="13.759979sp" android:textColor="#ff4b4b4b" android:id="@id/userPassword1" android:background="@drawable/login_useredit" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="250.0dip" android:hint="输入密码(6~12位)" android:password="true" android:singleLine="true" android:maxLength="12" android:layout_toRightOf="@id/password1" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:background="#ffff0000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+            </LinearLayout>
+            <RadioButton android:textSize="13.599976sp" android:textColor="@color/deeppink" android:id="@id/enable_sina_login_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="若您还未注册过梦芭莎，请创建一个梦芭莎账户" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/reg_userName2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="登录账号:" android:layout_centerVertical="true" />
+                    <EditText android:textSize="13.759979sp" android:textColor="#ff4b4b4b" android:id="@id/reg_userNameValue2" android:background="@drawable/login_useredit" android:paddingLeft="5.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="250.0dip" android:hint="输入Email地址或手机号" android:singleLine="true" android:layout_toRightOf="@id/reg_userName2" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/password12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="密        码:" android:layout_centerVertical="true" />
+                    <EditText android:textSize="13.759979sp" android:textColor="#ff4b4b4b" android:id="@id/userPassword12" android:background="@drawable/login_useredit" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="250.0dip" android:hint="输入密码(6~12位)" android:password="true" android:singleLine="true" android:maxLength="12" android:layout_toRightOf="@id/password12" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/password22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="确认密码:" android:layout_centerVertical="true" />
+                    <EditText android:textSize="13.759979sp" android:textColor="#ff4b4b4b" android:id="@id/userPassword22" android:background="@drawable/login_useredit" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="250.0dip" android:hint="输入确认密码" android:password="true" android:singleLine="true" android:maxLength="12" android:layout_toRightOf="@id/password22" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff6e6e6e" android:gravity="left" android:id="@id/register_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    </LinearLayout>
+</RelativeLayout>

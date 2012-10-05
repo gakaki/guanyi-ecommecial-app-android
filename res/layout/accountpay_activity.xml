@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:id="@id/back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="结算中心" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户支付" android:layout_centerInParent="true" style="@style/title" />
+        <TextView android:gravity="center" android:id="@id/submit" android:background="@anim/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="提交" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/enter" />
+    </RelativeLayout>
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom" android:layout_below="@id/title">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ffe04a7c" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="使用账户付款后，不足金额可用其他付款方式支付" android:layout_centerHorizontal="true" />
+            <com.moonbasa.tools.MyListView android:id="@id/list" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:divider="@null" android:dividerHeight="-1.0dip" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/nodata" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的账户下余额为零或无任何优惠券。" android:layout_centerInParent="true" />
+</RelativeLayout>

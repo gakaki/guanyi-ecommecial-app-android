@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:id="@id/shopcar_cancel" android:background="@anim/back_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购物车" android:layout_centerInParent="true" style="@style/title" />
+        <TextView android:gravity="center" android:id="@id/edit" android:background="@anim/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="编辑" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/enter" />
+    </RelativeLayout>
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ScrollView android:id="@id/scroll" android:background="@anim/more_toptext_normal" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_above="@id/info" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <com.moonbasa.tools.MyListView android:id="@id/hasList" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+            <com.moonbasa.tools.MyListView android:id="@id/hasComboList" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+            <TextView android:textColor="#ffffffff" android:id="@id/offsale" android:background="#ffff0000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以下商品缺货" />
+            <com.moonbasa.tools.MyListView android:id="@id/notHasList" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+            <com.moonbasa.tools.MyListView android:id="@id/notHasComboList" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+            <TextView android:textSize="13.0dip" android:textColor="#ffdf4177" android:gravity="center_vertical" android:id="@id/discount" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/noshop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_shopcar" android:layout_centerInParent="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff6b6b6b" android:id="@id/noshopText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="您的购物车中没有商品" android:layout_below="@id/noshop" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/info" android:background="@drawable/shopcar_background" android:layout_width="fill_parent" android:layout_height="145.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@anim/more_bottomtext_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="数量总计" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff931413" android:id="@id/numProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="优惠金额" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff931413" android:id="@id/youhuiPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="订单金额（不含运费）：" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff931413" android:id="@id/orderPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/submit" android:background="@anim/pink_button" android:layout_width="150.0dip" android:layout_height="40.0dip" android:text="立即结算" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

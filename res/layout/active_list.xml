@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@anim/filter_selector" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/chat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/chat" />
+        <TextView android:textSize="17.0dip" android:textColor="#ff262626" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/active_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="3.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrows" />
+    </LinearLayout>
+</RelativeLayout>

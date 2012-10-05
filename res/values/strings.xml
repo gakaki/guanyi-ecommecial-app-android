@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">梦芭莎购物管易</string>
+    <string name="getweibo">http://app.moonbasa.com/weibo.ashx</string>
+    <string name="getupdata">http://app.moonbasa.com/version.ashx</string>
+    <string name="cueLanding">您还未登录，将以游客身份进行购物。初次购物时，将以您的手机号码作为账号自动注册；如果您已有账号，也可登录账号。</string>
+    <string name="help">http://app.moonbasa.com/help.ashx</string>
+    <string name="utility">http://app.moonbasa.com/utility.ashx</string>
+    <string name="userlogin">http://app.moonbasa.com/login.ashx</string>
+    <string name="userinfo">http://app.moonbasa.com/user.ashx</string>
+    <string name="messagelist">http://app.moonbasa.com/getmessagelist.ashx</string>
+    <string name="home">http://app.moonbasa.com/home.ashx</string>
+    <string name="shopcar">http://app.moonbasa.com/cart.ashx</string>
+    <string name="submit">http://app.moonbasa.com/order.ashx</string>
+    <string name="searchurl">http://app.moonbasa.com/search.ashx</string>
+    <string name="product">http://app.moonbasa.com/product.ashx</string>
+    <string name="cate">http://app.moonbasa.com/category.ashx</string>
+    <string name="errorTitle">" "<strong>温馨提示</strong>" "</string>
+    <string name="nonetwork">" "<strong>暂无网络连接，请稍后再试</strong>" "</string>
+    <string name="errorContent">" "<strong>网络异常，是否重新尝试连接？</strong>" "</string>
+    <string name="timeout">" "<strong>请求超时，请稍后再试</strong>" "</string>
+    <string name="loadTitle">" "<strong>加载中</strong>" "</string>
+    <string name="LoadContent">" "<strong>请稍候……</strong>" "</string>
+    <string name="Stockout">" "<strong>该产品缺货</strong>" "</string>
+    <string name="nullsize">" "<strong>请选择商品尺寸！</strong>" "</string>
+    <string name="tel">" "<strong>4008208060</strong>" "</string>
+    <string name="help_tel">" "<strong>4007162828</strong>" "</string>
+    <string name="tip">" "<strong>您可以在“我的梦芭莎”中追踪你的订单状态和物流状态，您也可以拨打客服服务电话4007162828，取消或者修改您的订单.</strong>" "</string>
+    <string name="search">" "<strong>搜索内容不能为空</strong>" "</string>
+    <string name="noOrder">" "<strong>此订单暂无配送信息</strong>" "</string>
+    <string name="retry">重试</string>
+    <string name="know">知道了</string>
+    <string name="app_id">4ef95d1b</string>
+    <string name="more_feedback_prompt">我们将认真听取您的每一条建议和反馈，从而将为您提供更好的服务和体验，感谢您对梦芭莎的支持！</string>
+</resources>

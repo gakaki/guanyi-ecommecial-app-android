@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="返回" android:singleLine="true" style="@style/back" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/top_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="商品评论" android:singleLine="true" android:shadowColor="#77000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" style="@style/title" />
+    </FrameLayout>
+    <ListView android:id="@id/evaluateList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="50.0dip" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="#ff94969a" android:layout_above="@id/bottom" android:layout_below="@id/top" />
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+</RelativeLayout>

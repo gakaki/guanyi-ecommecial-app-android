@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="320.0dip"
+        android:layout_height="480.0dip"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120.0dip"
+            android:src="@drawable/about_log" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/vermsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center"
+                android:textColor="#ff666666"
+                android:textSize="14.0px"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="280.0dip"
+                android:layout_height="10.0dip"
+                android:layout_marginTop="25.0dip"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_barcolor" />
+
+            <TextView
+                android:id="@id/progressNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0% 0KB/0KB"
+                android:textColor="#ff666666"
+                android:textSize="14.0px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

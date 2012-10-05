@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/home_help_back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="公告" android:maxEms="10" android:singleLine="true" style="@style/title" />
+    </FrameLayout>
+    <include android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/help_content_linelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_above="@id/bottom" android:layout_below="@id/top">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <WebView android:textColor="@color/black" android:autoLink="phone|email" android:linksClickable="true" android:id="@id/help_content_answer_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="false" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

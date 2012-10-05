@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分享" />
+    <EditText android:gravity="top|left|center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_margin="10.0dip" android:hint="请输入分享内容" />
+    <Button android:id="@id/share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分享到新浪微博" />
+</LinearLayout>

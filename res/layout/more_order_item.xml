@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@anim/order_null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:textColor="@color/white" android:layout_gravity="right" android:id="@id/more_order_item_cancelorder" android:background="@anim/enter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消订单" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_id_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_id_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_state_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单状态：" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/order_state_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_payment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式：" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/order_payment_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下单时间：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_time_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_allprice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总计:" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/order_allprice_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" />
+</FrameLayout>

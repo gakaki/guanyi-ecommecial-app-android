@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@anim/shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@anim/color_shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/wllist_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="订单编号:" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/wllist_item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_toRightOf="@id/wllist_item_name" android:layout_alignBottom="@id/wllist_item_name" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/wllist_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="总金额:" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="#fffa357c" android:id="@id/wllist_item_price_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_toRightOf="@id/wllist_item_price" android:layout_alignBottom="@id/wllist_item_price" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff919191" android:id="@id/wllist_item_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textColor="#ff000000" android:id="@id/wlitem_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+    <LinearLayout android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="3.0dip">
+        <TextView android:textColor="#ff000000" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:text="下单时间:" />
+        <TextView android:textColor="#ff000000" android:id="@id/wlitem_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</LinearLayout>

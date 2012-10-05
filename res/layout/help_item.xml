@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right|center" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/submit_order_arrow" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_gravity="left|center" android:id="@id/help_title_textview" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/listview_line" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="返回" android:singleLine="true" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/hot_single_product" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="品牌限时购" android:singleLine="true" style="@style/title" />
+    </FrameLayout>
+    <com.moonbasa.tools.CustomListView android:id="@id/brand_time_line_buy_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="3.0dip" android:layout_below="@id/top" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/home_menu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">	分类
+<ImageView android:id="@id/classify" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_menu_class_normal" android:layout_toLeftOf="@id/shopcar" />	搜索
+<ImageView android:id="@id/search" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_menu_search_normal" android:layout_toRightOf="@id/shopcar" />	主页
+<ImageView android:id="@id/index" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_menu_home_normal" android:layout_toLeftOf="@id/classify" />	购物车
+<ImageView android:id="@id/shopcar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_menu_shopping_normal" android:layout_centerInParent="true" android:contentDescription="@string/cueLanding" />	更多
+<ImageView android:id="@id/more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_menu_more_normal" android:layout_toRightOf="@id/search" />	购物车商品数量
+<ImageView android:id="@id/shopcar_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/shopcar" android:layout_alignRight="@id/shopcar" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">	以下选中效果
+<ImageView android:id="@id/selectorTwo" android:background="@drawable/the_dead_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-35.799988dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/selectorOne" android:background="@drawable/the_dead_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-90.0dip" android:layout_alignLeft="@id/index" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/selectorCenter" android:background="@drawable/the_dead_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/selectorThree" android:background="@drawable/the_dead_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-35.799988dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/selectorFour" android:background="@drawable/the_dead_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-90.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

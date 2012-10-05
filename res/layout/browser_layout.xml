@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/favorite_mine_top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/favorite_member_textview" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/favorite_mine_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浏览记录" style="@style/title" />
+        <TextView android:gravity="center" android:layout_gravity="right|center" android:id="@id/favorite_mine_delete_all" android:background="@anim/index_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="清空所有" style="@style/back" />
+    </FrameLayout>
+    <include android:id="@id/favorite_mine_buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <GridView android:gravity="center" android:id="@id/favoriteList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" android:layout_above="@id/favorite_mine_buttom" android:layout_below="@id/favorite_mine_top" />
+</RelativeLayout>

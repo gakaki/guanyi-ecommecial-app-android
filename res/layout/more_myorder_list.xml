@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_frame_1" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的订单" android:layout_centerInParent="true" style="@style/title" />
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/user_center" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="个人中心" android:shadowColor="#77000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" style="@style/back" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_frame_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_frame_1">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:weightSum="3.0">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/more_no_delivered" android:background="@anim/no_deliver_selected" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="未送达" android:shadowColor="#ffb8b8b8" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/more_have_arrived" android:background="@anim/yes_deliver_normal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="-1.0dip" android:layout_marginRight="-1.0dip" android:text="已送达" android:shadowColor="#ffb8b8b8" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/more_in_trimester" android:background="@anim/three_month_normal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="三个月内" android:shadowColor="#ffb8b8b8" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/order_null" android:background="@anim/order_null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="-1.0dip" android:layout_marginRight="10.0dip" android:text="暂无订单" android:layout_below="@id/layout_frame_2" android:layout_centerInParent="true" />
+    <include android:id="@id/all_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ListView android:id="@id/order_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-1.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:cacheColorHint="#00000000" android:divider="#ffffffff" android:dividerHeight="5.0dip" android:layout_above="@id/all_button" android:layout_below="@id/layout_frame_2" android:layout_centerHorizontal="true" />
+</RelativeLayout>

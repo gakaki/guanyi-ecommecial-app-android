@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/back" android:background="@anim/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品列表" style="@style/back" />
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="筛选" style="@style/title" />
+    </FrameLayout>
+    <include android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ListView android:id="@id/filter_expandable" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/grey" android:childDivider="#ffe0e0e0" android:divider="#ffe0e0e0" android:dividerHeight="1.0dip" android:layout_above="@id/bottom" android:layout_below="@id/top" />
+    <ImageView android:id="@id/filter_image_null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_shopcar" android:layout_centerInParent="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff6b6b6b" android:id="@id/filter_text_null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="暂无筛选" android:layout_below="@id/filter_image_null" android:layout_centerHorizontal="true" />
+</RelativeLayout>

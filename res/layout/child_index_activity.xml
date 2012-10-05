@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/index_head" android:background="@drawable/index_title" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="17.0sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:id="@id/showTitle" android:layout_width="150.0dip" android:layout_height="25.0dip" android:text="若缇诗时尚女装" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/child_index_upordown" android:background="@drawable/ing2ing_updown" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/index_activity_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_layout">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/search_outlayout" android:layout_width="275.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip">
+                <EditText android:textSize="13.699982sp" android:id="@id/index_activity_search_text" android:background="@null" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="搜索商品" android:layout_weight="0.22" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/index_activity_search_ok" android:background="@anim/search_button_selector" android:layout_width="35.0dip" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <TextView android:layout_gravity="center_vertical" android:id="@id/index_activity_voice" android:background="@anim/voice_selector" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/child_activity_linearlayout" android:background="#ffffffff" android:paddingTop="30.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttom" android:layout_below="@id/index_head">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <ImageView android:id="@id/moonbasa_girl" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/moonbasa_gril" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/moonbasa_bar" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/moonbasa_bar" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/moonbasa_shoe" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/moonbasa_shoe" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <ImageView android:id="@id/ing2ing" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ing2ing" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/rutisher" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rutisher" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/monteamor" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/monteamor" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <ImageView android:id="@id/suorang" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/suorang" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/baoyeah" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baoye" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/clafield" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clafield" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <ImageView android:id="@id/qianjin" android:background="@anim/activity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qianjin" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/clafield" android:background="@anim/activity_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clafield" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffe0e0e0" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/qianjin" android:background="@anim/activity_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qianjin" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/index_activity_relative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttom" android:layout_below="@id/index_head">
+        <RelativeLayout android:id="@id/center_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moonbasa.tools.FlingGallery android:gravity="center" android:id="@id/activity_big_gallery" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="150.0dip" android:spacing="0.0dip" android:layout_alignParentTop="true" />
+            <RelativeLayout android:id="@id/activity_selector_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-13.5dip" android:layout_below="@id/activity_big_gallery">
+                <ImageView android:id="@id/activity_selector_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/brand_selector" android:background="#ff9d132e" android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_below="@id/activity_big_gallery">
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="热卖单品" />
+                <com.moonbasa.tools.CustomGallery android:layout_gravity="center" android:id="@id/all_brand_selector" android:focusable="false" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:spacing="10.0dip" />
+                <RelativeLayout android:id="@id/child_index_activity_dot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                    <ImageView android:id="@id/activity_selector_imageview_child" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/child_index_activity_buttom" android:background="@drawable/child_index_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="2.0" android:layout_below="@id/brand_selector">
+                <RelativeLayout android:layout_gravity="center" android:id="@id/child_index_new" android:background="@anim/activity_selector_1" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/child_index_activity_new_" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff313131" android:id="@id/child_index_activity_text_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="新品首发" android:layout_toRightOf="@id/child_index_activity_new_" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="13.599976sp" android:textColor="#ff8a8a8a" android:id="@id/child_index_activity_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Starting new" android:layout_toRightOf="@id/child_index_activity_new_" android:layout_below="@id/child_index_activity_text_" />
+                    <ImageView android:id="@id/child_index_activity_arrow" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrows" android:layout_toRightOf="@id/child_index_activity_text_1" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:background="#ffa8a8a8" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <RelativeLayout android:layout_gravity="center" android:id="@id/child_index_onsell" android:background="@anim/activity_selector_1" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/child_index_activity_onsell" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff313131" android:id="@id/child_index_activity_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="特价专区" android:layout_toRightOf="@id/child_index_activity_onsell" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="13.599976sp" android:textColor="#ff8a8a8a" android:id="@id/child_index_activity_text_21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Special zone" android:layout_toRightOf="@id/child_index_activity_onsell" android:layout_below="@id/child_index_activity_text_2" />
+                    <ImageView android:id="@id/child_index_activity_arrow1" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrows" android:layout_toRightOf="@id/child_index_activity_text_21" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

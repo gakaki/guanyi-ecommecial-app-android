@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/item_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/item_icon" android:layout_width="90.0dip" android:layout_height="110.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/item_icon_layout">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.759979sp" android:textColor="#ff6e6e6e" android:id="@id/more_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="颜色：" />
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:id="@id/more_product_color" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="尺寸：" />
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:id="@id/more_product_size" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量：" />
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:id="@id/more_product_count" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.759979sp" android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/more_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.759979sp" android:textColor="#ff6e6e6e" android:id="@id/more_product_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

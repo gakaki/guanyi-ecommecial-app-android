@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout1" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_centerInParent="true" style="@style/title" />
+    </FrameLayout>
+    <include android:id="@id/buttom_tool_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/buttom_tool_layout" android:layout_below="@id/layout1" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/feedback_more" android:background="@anim/more_toptext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/share_icon" android:background="@drawable/more_feedback_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="用户反馈" android:layout_toRightOf="@id/share_icon" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/share_more" android:background="@anim/more_bottomtext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/share_icon" android:background="@drawable/more_weibo_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="官方微博" android:layout_toRightOf="@id/share_icon" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/help_more" android:background="@anim/more_toptext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/help_icon" android:background="@drawable/help_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="帮助" android:layout_toRightOf="@id/help_icon" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/about_more" android:background="@anim/more_middletext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/about_icon" android:background="@drawable/about_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="关于" android:layout_toRightOf="@id/about_icon" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/clear_cache" android:background="@anim/more_bottomtext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/sina_icon" android:background="@drawable/sina_icon_checked" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff676767" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="清空缓存" android:layout_toRightOf="@id/sina_icon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

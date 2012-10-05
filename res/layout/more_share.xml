@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout1" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享账号绑定" android:layout_centerInParent="true" style="@style/title" />
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/more_share_more" android:background="@anim/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="更多" style="@style/back" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout2" android:background="@anim/shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/layout1" android:layout_centerHorizontal="true">
+        <FrameLayout android:background="@anim/more_toptext_background" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/sina_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_gravity="left|center" android:id="@id/sina_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="新浪微博:" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffe14a7d" android:layout_gravity="center" android:id="@id/sina_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/sina_button" android:layout_width="70.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" android:text="账号绑定" />
+        </FrameLayout>
+        <FrameLayout android:background="@anim/more_middletext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/qq_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_gravity="left|center" android:id="@id/qq_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="腾讯微博:" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffe14a7d" android:layout_gravity="center" android:id="@id/qq_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/qq_button" android:layout_width="70.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" android:text="账号绑定" />
+        </FrameLayout>
+        <FrameLayout android:background="@anim/more_middletext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/happy_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_gravity="left|center" android:id="@id/happy_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="开心网:" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffe14a7d" android:layout_gravity="center" android:id="@id/happy_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/happy_button" android:layout_width="70.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" android:text="账号绑定" />
+        </FrameLayout>
+        <FrameLayout android:background="@anim/more_bottomtext_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/renren_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_gravity="left|center" android:id="@id/renren_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="人人网:" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffe14a7d" android:layout_gravity="center" android:id="@id/renren_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/renren_button" android:layout_width="70.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" android:text="账号绑定" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/infolist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:text="FFFFFFFFFFFFFFFFFF" android:singleLine="true" android:maxLength="12" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/infolist_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="FFFFFFFFFFFFFFFFFF" android:layout_below="@id/infolist_title" android:layout_alignLeft="@id/infolist_title" />
+    <TextView android:textSize="13.0sp" android:id="@id/infolist_isread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="已读" android:layout_toRightOf="@id/infolist_date" android:layout_alignBottom="@id/infolist_date" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

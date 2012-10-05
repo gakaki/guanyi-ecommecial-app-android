@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/single_product_1" android:layout_width="95.0dip" android:layout_height="130.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/single_product_1_textview" android:background="@anim/sigle_item_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="￥150" android:layout_alignRight="@id/single_product_1" android:layout_alignBottom="@id/single_product_1" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/single_product_2" android:layout_width="95.0dip" android:layout_height="130.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/single_product_2_textview" android:background="@anim/sigle_item_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="￥150" android:layout_alignRight="@id/single_product_2" android:layout_alignBottom="@id/single_product_2" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/single_product_3" android:layout_width="95.0dip" android:layout_height="130.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/single_product_3_textview" android:background="@anim/sigle_item_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="￥150" android:layout_alignRight="@id/single_product_3" android:layout_alignBottom="@id/single_product_3" />
+    </RelativeLayout>
+</LinearLayout>

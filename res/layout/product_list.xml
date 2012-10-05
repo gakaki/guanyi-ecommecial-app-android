@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="left|center" android:id="@id/back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" android:maxLength="5" style="@style/back" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="19.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/listName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索结果" />
+            <TextView android:textSize="13.669983sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/numText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共搜索到  件" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.moonbasa.tools.CustomGallery android:id="@id/selector" android:background="#ffededed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="-2.0dip" android:spacing="18.0dip" android:layout_below="@id/filterLayout" android:unselectedAlpha="0.5" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/filterLayout" android:background="@drawable/classify_px" android:layout_width="fill_parent" android:layout_height="42.0dip" android:weightSum="7.3" android:layout_below="@id/top">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_weight="6.0">
+            <TextView android:textSize="13.0sp" android:textColor="#fff83e80" android:gravity="center" android:id="@id/firstSort" android:background="@drawable/classify_px_down" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="新品" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffdedede" android:layout_width="1.0dip" android:layout_height="38.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/seconSort" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="价格↑" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffd1d1d1" android:layout_width="1.0dip" android:layout_height="38.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/thirdSort" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="热销" android:layout_weight="1.0" />
+            <LinearLayout android:background="#ffd1d1d1" android:layout_width="1.0dip" android:layout_height="38.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/filter" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/classify_off" android:layout_weight="1.0" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/grid" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00ffffff" android:horizontalSpacing="5.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="150.0dip" android:numColumns="3" android:layout_above="@id/buttom" android:layout_below="@id/selector" />
+    <LinearLayout android:gravity="center" android:id="@id/loading_tip" android:background="#ff87b1f7" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom">
+        <ProgressBar android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载数据，请稍候..." />
+    </LinearLayout>
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+</RelativeLayout>

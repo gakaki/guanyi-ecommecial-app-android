@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:id="@id/back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="购物车" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结算中心" android:layout_centerInParent="true" style="@style/title" />
+        <TextView android:gravity="center" android:id="@id/submit" android:background="@anim/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="提交订单" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/enter" />
+    </RelativeLayout>
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom" android:layout_below="@id/title" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ffa33736" android:layout_gravity="center_horizontal" android:id="@id/pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" />
+            <RelativeLayout android:id="@id/consigneeRel" android:background="@anim/shape_rounded_rectangle_press" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/consignee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" android:text="收货人信息:" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/uuuu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/consignee">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:layout_gravity="left|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货人姓名 ： " />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:layout_gravity="center_vertical" android:id="@id/consigneeInfo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:layout_gravity="left|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码 ： " />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:layout_gravity="center" android:id="@id/consigneeInfo_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:layout_gravity="left|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细地址 ： " />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:layout_gravity="center" android:id="@id/consigneeInfo_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@anim/shape_rounded_rectangle_press" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <RelativeLayout android:id="@id/dispatchingRel" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/dispatching" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="配送方式:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:id="@id/dispatchingInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_toRightOf="@id/dispatching" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/payRel" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="支付方式:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:id="@id/payInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="请选择" android:layout_toRightOf="@id/pay" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/timeRel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minHeight="40.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="配送时间:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:id="@id/timeInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="请选择" android:layout_toRightOf="@id/time" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/accountPayRel" android:background="@anim/shape_rounded_rectangle_press" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/accountPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="账户支付:" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff6b6b6b" android:id="@id/accountPayInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="如有余额或优惠劵请输入" android:layout_toRightOf="@id/accountPay" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ScrollView android:layout_gravity="center_horizontal" android:background="@anim/more_toptext_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="3.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff1b1b1b" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="商品清单" />
+                    <com.moonbasa.tools.MyListView android:id="@id/list" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+                    <com.moonbasa.tools.MyListView android:id="@id/hasComboList" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+                    <TextView android:id="@id/offsale" android:background="#ffff0000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以下商品缺货" />
+                    <com.moonbasa.tools.MyListView android:id="@id/notHasList" android:background="@drawable/suborder_list_select" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+                    <com.moonbasa.tools.MyListView android:id="@id/notHasComboList" android:background="@drawable/suborder_list_select" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/submitorder_list_click" android:cacheColorHint="#ffffffff" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ffdf4177" android:gravity="center_vertical" android:id="@id/discount" android:background="@drawable/info_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+            </ScrollView>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:background="@anim/more_bottomtext_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff1b1b1b" android:id="@id/priceinfoKey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffff0000" android:id="@id/priceinfoValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@id/submit_" android:background="@anim/pink_button" android:layout_width="150.0dip" android:layout_height="40.0dip" android:text="提交订单" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/submit_sellayout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom">
+        <com.moonbasa.tools.MoreAddressView android:id="@id/submit_province" android:layout_width="90.0dip" android:layout_height="wrap_content" />
+        <com.moonbasa.tools.MoreAddressView android:id="@id/submit_city" android:layout_width="90.0dip" android:layout_height="wrap_content" />
+        <com.moonbasa.tools.MoreAddressView android:id="@id/submit_area" android:layout_width="90.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/submit_post_sellayout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom">
+        <com.moonbasa.tools.MoreAddressView android:id="@id/submit_scoll_post" android:layout_width="120.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

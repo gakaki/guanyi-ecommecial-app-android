@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/share_weibo_top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/share_button_back" android:background="@anim/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip" android:text="商品详情" style="@style/back" />
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/share_weibo_title" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="" android:singleLine="true" style="@style/title" />
+        <TextView android:gravity="center" android:layout_gravity="right|center" android:id="@id/button_share" android:background="@anim/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="分享" style="@style/enter" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/mid_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_above="@id/buttom" android:layout_below="@id/share_weibo_top">
+        <EditText android:textSize="15.0sp" android:textColor="#ff6e6e6e" android:gravity="top" android:id="@id/content" android:background="@anim/shape_rounded_rectangle" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="280.0dip" android:text="" android:maxLength="140" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff6e6e6e" android:id="@id/word_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还可以输入140字" android:layout_below="@id/content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

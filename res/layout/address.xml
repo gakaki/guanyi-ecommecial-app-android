@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@anim/shape_rounded_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:id="@id/userName" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收  货  人： " />
+        <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/consignee_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/userName" android:layout_alignParentRight="true" android:imeOptions="actionNext" />
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/area_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:id="@id/addressName" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="所在地区： " android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/addressName">
+            <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/area_edit" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:imeOptions="actionNext" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:id="@id/addressDetails" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细地址： " />
+        <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/addr_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/addressDetails" android:inputType="text" android:imeOptions="actionNext" />
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/post_layout" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:id="@id/postCodeName" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮        编： " />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/postCodeName">
+            <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/postcode_edit" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:imeOptions="actionNext" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:id="@id/moblievalue" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系电话： " />
+        <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/phone_edit" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="11" android:numeric="integer" android:layout_toRightOf="@id/moblievalue" android:inputType="number" android:imeOptions="actionNext" />
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/submit_order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/guding_phone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:id="@id/telPhoneValue" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="固定电话：" />
+        <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:gravity="left" android:id="@id/tel_edit" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:singleLine="true" android:maxLength="16" android:layout_toRightOf="@id/telPhoneValue" android:inputType="phone" android:imeOptions="actionDone" />
+    </RelativeLayout>
+</LinearLayout>

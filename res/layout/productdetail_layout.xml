@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:background="@drawable/detail" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="left|center" android:id="@id/productName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="商品详情" android:singleLine="true" android:maxLength="12" />
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="right|center" android:id="@id/share" android:background="@anim/share_1_selector" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" />
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="right|center" android:id="@id/Entry" android:background="@anim/addfavorite_1_selector" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginRight="52.0dip" />
+    </FrameLayout>
+    <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    <ScrollView android:id="@id/scro" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom" android:layout_below="@id/top">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/picGallery" android:background="@anim/product_list_gallery_background" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <com.moonbasa.tools.DefineGallery android:id="@id/Gallery01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="20.0dip" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/activity_selector_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:src="@drawable/product_point_selected" />
+            </FrameLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/desLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/name_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:text="" />
+                <RelativeLayout android:id="@id/price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/name_1">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/priceInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:text="售价 :" android:singleLine="true" android:layout_alignBottom="@id/price" />
+                    <TextView android:textSize="22.0sp" android:textColor="#ffec1c6e" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/priceInfo" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff6b6b6b" android:id="@id/referencePrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="8.0dip" android:text="" android:layout_toRightOf="@id/price" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/color_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/price_layout">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/colourIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="颜色: " />
+                    <TextView android:textColor="#ff5b5a5a" android:layout_gravity="center" android:id="@id/colorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择" android:layout_toRightOf="@id/colourIcon" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <HorizontalScrollView android:id="@id/color_chose" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="55.0dip" android:layout_below="@id/color_layout">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/color_switch" android:layout_width="250.0dip" android:layout_height="fill_parent">
+                            <GridView android:gravity="center" android:id="@id/colorswitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="3.0dip" android:verticalSpacing="1.0dip" android:stretchMode="spacingWidthUniform" android:columnWidth="38.0dip" android:numColumns="auto_fit" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/sizeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/color_chose">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/sizeIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="2.0dip" android:text="尺码: " />
+                    <TextView android:textColor="#ff5b5a5a" android:id="@id/sizeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择" android:layout_toRightOf="@id/sizeIcon" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <ImageView android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/showSizeDetail" android:layout_width="30.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/table" android:layout_below="@id/sizeLayout" />
+                <HorizontalScrollView android:id="@id/size_chose" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="55.0dip" android:layout_below="@id/sizeLayout">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/size_switch" android:layout_width="250.0dip" android:layout_height="fill_parent">
+                            <GridView android:gravity="center" android:id="@id/sizeswitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="3.0dip" android:verticalSpacing="1.0dip" android:stretchMode="spacingWidthUniform" android:columnWidth="38.0dip" android:numColumns="auto_fit" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/numLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/size_chose">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/normal" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/buynumIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="数量:" />
+                        <EditText android:gravity="center" android:id="@id/buyNumText" android:background="@anim/more_middletext_normal" android:layout_width="40.0dip" android:layout_height="27.0dip" android:layout_marginLeft="3.0dip" android:text="1" android:maxLength="2" android:numeric="integer" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ffee6aa7" android:gravity="center_vertical" android:id="@id/stock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/dot_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/numLayout">
+                    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/addShopCar" android:background="@drawable/buy_thing" android:layout_width="220.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:text="加入购物车" />
+                    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/hotIcon" android:background="@drawable/buy_thing" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="同类热卖" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/dot_line_1" android:background="@drawable/dot_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tab" />
+                <RelativeLayout android:id="@id/point" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/dot_line_1">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/pointIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="1.0dip" android:text="评价详情" />
+                    <RatingBar android:id="@id/pointRatingbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:numStars="5" android:layout_toRightOf="@id/pointIcon" style="@style/roomRatingBar" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff5b5a5a" android:id="@id/pointNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/pointIcon" android:layout_centerInParent="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/dot_line_2" android:background="@drawable/dot_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/point" />
+                <LinearLayout android:id="@id/aa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dot_line_2">
+                    <TextView android:textSize="17.0sp" android:textColor="#fffa4764" android:gravity="center" android:id="@id/taocan" android:background="@anim/taocan_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:text="热销套装搭配  （套装更便宜）" android:layout_centerInParent="true" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/bb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/aa">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff5b5a5a" android:layout_gravity="left|center" android:id="@id/texing" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" />
+                </FrameLayout>
+                <LinearLayout android:id="@id/dot_line_3" android:background="@drawable/dot_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bb" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/frame" android:background="@anim/product_list_round_background" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/gallery_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:text="购买了此商品的用户还购买了：" />
+                <com.moonbasa.tools.NoScrollGallery android:id="@id/recomond_product" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:spacing="15.0dip" android:layout_below="@id/gallery_name" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

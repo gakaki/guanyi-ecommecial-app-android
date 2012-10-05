@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/evaluationLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff999999" android:id="@id/contentText" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="素色立体剪裁连衣裙，在不经意间就衬托出高贵的名媛气质，知性而又典雅。 短款的设计性感之余更显高挑，裙子前片的褶皱一改常规，大片的收褶让裙子的下摆微微的成花苞形，让裙子摆脱平庸变得时尚摩登。  丝滑闪亮的纺丝面料，轻盈舒适中增添裙子的高档质感，光滑的面料衬托出时尚OL名媛般的高贵。" android:maxLines="12" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

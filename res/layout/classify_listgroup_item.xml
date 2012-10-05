@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/list_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/classify_listgroup_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/classify_listgroup_item_arrows_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/about_top" android:background="@drawable/top_background" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:gravity="center" android:layout_gravity="left|center" android:id="@id/button_more" android:background="@anim/back" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="更多" style="@style/back" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="关于" style="@style/title" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/about_top">
+        <RelativeLayout android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/about_logo" android:background="@drawable/about_log" android:layout_width="200.0dip" android:layout_height="135.0dip" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout1">
+            <TextView android:textSize="13.759979dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/about_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff6e6e6e" android:id="@id/about_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="梦芭莎" android:layout_below="@id/about_version" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff6e6e6e" android:id="@id/about_website" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ing2ing.com" android:layout_below="@id/about_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff6e6e6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Copyright©2012梦芭莎，All Rights Reserved" android:layout_below="@id/about_website" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/buttom_layout" />
+    </LinearLayout>
+</RelativeLayout>
